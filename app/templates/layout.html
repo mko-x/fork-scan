@@ -9,48 +9,38 @@
             padding-bottom: 3rem;
             padding-left: 3rem;
             padding-right: 3rem;
-    
         }
         </style>
     </head>
     <body>
-            <div class="card">
-                <div class="card-header text-center">
-                        <h3>
-                            <a href="https://github.com/mko-x" class="blue" ALIGN=”left”>
-                                <img src ='/static/images/logo.png' alt = 'LOGO' class= 'img-fluid' width="75" height="" ALIGN=”left”></img>
-                                Fork Information
-                            </a> 
-                            
-                        </h3>
-                    </div>
-            
-                
-
-            <div class='card-block'>
-
+        <div class="card">
+            <div class="card-header text-center">
+                <h3>
+                    <a href="https://github.com/mko-x/fork-scan" class="blue" ALIGN=”left”>
+                        <img src ='/static/images/logo.png' alt = 'LOGO fork-scan' class= 'img-fluid' width="75" height="" ALIGN=”left”></img>
+                    </a> 
+                </h3>
+            </div>
+        </div>
+        <div class='card-block'>
             <div class="row">
                 <div class="form-group col-lg-12 col-offset-2 centered">      
-                        <form action="{{url_for('forks')}}" method="post">
+                    <form action="{{url_for('forks')}}" method="post">
                         <div class="input-group">                            
-                         <input class="form-control centered" type="text" name="repo" placeholder="username/repositoryname">
-                                    <span class="input-group-btn">
-                                         <input class="btn btn-primary" type = "submit" value = "Scan Forks" />
-                                    </span>
-                        </form>
+                            <input class="form-control centered" type="text" name="repo" placeholder="username/repositoryname">
+                                <span class="input-group-btn">
+                                        <input class="btn btn-primary" type = "submit" value = "Scan" />
+                                </span>
+                            </input>
                         </div>
-                    </div>
+                    </form>
+                </div>
             </div>
-            <!-- <div class="panel-body">
-            </div> -->
-         
-        </div>
-           
-       
+
         {% block body %}
         {% endblock %}  
 
-    </div>
+        </div>
      </body>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -59,13 +49,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">  
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
     <script>
-    $(document).ready(function() {
-    $('#forkTable').DataTable({
-        "processing": true,
-        "serverSide": true
-        
-    });
-    } );
+        $(document).ready(function() {
+            $('#forkTable').DataTable({
+                "processing": true,
+                "serverSide": true
+            });
+        } );
     </script>
 
     </html>
