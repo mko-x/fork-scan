@@ -3,7 +3,7 @@
 # Info
 This is a fork scanner for [github.com](https://github.com/mko-x) repositories.
 
-# Support
+# Tech
 A [python3](https://python.org) based [flask](http://flask.pocoo.org/) web app to scan for forks of a repository on github. It shows details about the forks as well.
 
 # Try live online
@@ -17,6 +17,9 @@ See [docker details](https://github.com/mko-x/fork-scan/blob/master/docs/develop
 
 # Development
 See [development details](https://github.com/mko-x/fork-scan/blob/master/docs/development.md).
+
+# Support
+If you have issues see repo [issues](https://github.com/mko-x/fork-scan/issues).
 
 # Thanks
 to [abhishek9sharma](https://github.com/abhishek9sharma).
