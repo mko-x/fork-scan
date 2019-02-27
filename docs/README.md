@@ -13,10 +13,10 @@ A [python3](https://python.org) based [flask](http://flask.pocoo.org/) web app t
 ```bash
 docker run -p 8081:80 mk0x/docker-fork-scan
 ```
-See [docker details](./docs/docker.md).
+See [docker details](docker.md).
 
 # Development
-See [development details](./docs/development.md).
+See [development details](development.md).
 
 # Thanks
 to [abhishek9sharma](https://github.com/abhishek9sharma).
