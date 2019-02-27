@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  forkscan:
+    image: mk0x/docker-fork-scan
+    container_name: githubForkScan
+    environment:
+      - FLASK_APP=main.py
+      - 'RUN=flask run --host=0.0.0.0 --port=80'
+      - VIRTUAL_HOST=sample.domain.tld
+    command: flask run --host=0.0.0.0 --port=80
+    networks:
+      - outpost_network
+
+networks:
+  outpost_network:
