@@ -4,5 +4,8 @@ LABEL homepage="https://fs.m-ko.de"
 # OPT: FROM tiangolo/meinheld-gunicorn-flask:python3.7
 
 COPY ./app /app
+COPY ./setup.sh /
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip && \
+    chmod +x /setup.sh && \
+    /setup.sh

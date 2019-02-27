@@ -4,8 +4,8 @@
 
 echo "::forkscan dependency setup"
 cd ./app
-gunicorn -w 4 forkinfo:app
-echo
+# gunicorn -w 4 forkinfo:app
+
 pip3 install -r "./requirements.txt"
 echo "::forkscan dependencies installed"
 
