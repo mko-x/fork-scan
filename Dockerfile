@@ -5,3 +5,4 @@ LABEL homepage="https://fs.m-ko.de"
 
 COPY ./app /app
 
+RUN pip install --upgrade pip
