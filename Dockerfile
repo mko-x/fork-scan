@@ -1,6 +1,5 @@
 FROM tiangolo/uwsgi-nginx-flask:python3.7-alpine3.7
-LABEL maintainer="Markus Kosmal <dev@m-ko.de>"
-LABEL homepage="https://fs.m-ko.de"
+LABEL maintainer="dev@m-ko.de"
 
 COPY ./app /app
 COPY ./setup.sh /
