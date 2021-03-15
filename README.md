@@ -6,9 +6,6 @@ This is a web based fork scanner for [github.com](https://github.com/mko-x)'s re
 # Tech
 A [python3](https://python.org) based [flask](http://flask.pocoo.org/) web app to scan for forks of a repository on github. It shows details about the forks as well.
 
-# Try
-Try now at live [fork-scan](https://fs.m-ko.de).
-
 # Development
 See [development info](./docs/development.md).
 
