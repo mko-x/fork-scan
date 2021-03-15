@@ -6,9 +6,6 @@ This is a fork scanner for [github.com](https://github.com/mko-x) repositories.
 # Tech
 A [python3](https://python.org) based [flask](http://flask.pocoo.org/) web app to scan for forks of a repository on github. It shows details about the forks as well.
 
-# Try live online
-[fork-scan live](https://fs.m-ko.de)
-
 # Docker
 ```bash
 docker run -p 8081:80 mk0x/docker-fork-scan
